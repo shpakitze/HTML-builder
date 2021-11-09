@@ -17,7 +17,7 @@ function getFile(folder) {
             const fileSize = stats.size;
             console.log(`${filelName} - ${ext.slice(1)} - ${fileSize} bytes`);
           });
-        } else getFile(path.join(folder, el.name));
+        } //else getFile(path.join(folder, el.name));
       });
     }
   );
