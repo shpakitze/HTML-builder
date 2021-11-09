@@ -14,6 +14,7 @@ rl.on('SIGINT', () => {
 });
 
 const closeStream = () => {
+  console.log('thank you');
   writeStream.end();
   rl.close();
 };
