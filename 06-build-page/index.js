@@ -1,9 +1,9 @@
 const path = require('path');
 const fs = require('fs');
-const { mkdir, rmdir, readdir, copyFile } = require('fs/promises');
+const { mkdir, rm, readdir, copyFile } = require('fs/promises');
 
 const delDir = async (folder) => {
-  await rmdir(folder, { recursive: true });
+  await rm(folder, { force: true, recursive: true });
   await mkdir(folder, { recursive: true });
 };
 
